@@ -1,4 +1,4 @@
-# 実行は[. samile.sh]
+# 実行は[. sample.sh]
 
 # 使ってるシェルの確認
 echo $0
