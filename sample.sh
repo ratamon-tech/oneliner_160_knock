@@ -7,3 +7,8 @@ echo $0
 echo $((1 + 1)) # 2
 echo $((2 ** 2)) # 4
 echo $((3 / 2)) # 1
+
+# パイプで渡すパターン
+echo '1 + 1' | sed 's/.*/echo $((&))/' | bash
+echo '1 + 1' | sed 's/^/puts /' | ruby
+echo '1 + 1' | sed 's/.*/print(&)/' | python
