@@ -17,3 +17,5 @@ echo 'クロロメチルエチルエーテル' | sed -E 's/(メチル)(エチル
 seq 100 | grep "[02468]$" | xargs
 # 奇数を100まで横に並べる
 seq 100 | grep "[^02468]$" | xargs
+
+echo abc | tr ac bq
