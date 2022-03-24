@@ -19,3 +19,6 @@ seq 100 | grep "[02468]$" | xargs
 seq 100 | grep "[^02468]$" | xargs
 
 echo abc | tr ac bq
+
+# 偶数をawkの式で出力
+seq 5 | awk '$1%2==0' | xargs
