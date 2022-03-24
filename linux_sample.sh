@@ -22,3 +22,9 @@ echo abc | tr ac bq
 
 # 偶数をawkの式で出力
 seq 5 | awk '$1%2==0' | xargs
+
+# printで出力を工夫
+seq 5 | awk '$1%2==0{printf("%s 偶数　\n",$1)}'
+
+# 縦に並んだ数値の合計値算出
+seq 5 | xargs | sed 's/ /+/g' | sed 's/.*/echo $((&))/' | bash
