@@ -26,5 +26,11 @@ seq 5 | awk '$1%2==0' | xargs
 # printで出力を工夫
 seq 5 | awk '$1%2==0{printf("%s 偶数　\n",$1)}'
 
+# パターン複数
+seq 5 | awk '$1%2==0{print $1,"偶数"}$1%2{print $1,"奇数"}'
+
+# BEGIN/END
+seq 5 | awk 'BEGIN{a=0}$1%2==0{print $1,"偶数"}$1%2{print $1,"奇数"}{a+=$1}END{print "合計",a}'
+
 # 縦に並んだ数値の合計値算出
 seq 5 | xargs | sed 's/ /+/g' | sed 's/.*/echo $((&))/' | bash
