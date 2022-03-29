@@ -34,3 +34,6 @@ seq 5 | awk 'BEGIN{a=0}$1%2==0{print $1,"偶数"}$1%2{print $1,"奇数"}{a+=$1}E
 
 # 縦に並んだ数値の合計値算出
 seq 5 | xargs | sed 's/ /+/g' | sed 's/.*/echo $((&))/' | bash
+
+# 三項演算子
+seq 5 | awk '{print $1%2 ? "奇数" : "偶数"}' # awkは非ゼロは真
