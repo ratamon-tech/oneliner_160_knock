@@ -1,0 +1,1 @@
+awk -F ',' '{print $0,$2+$3}' table.csv
