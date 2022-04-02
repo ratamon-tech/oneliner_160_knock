@@ -12,3 +12,6 @@ echo $((3 / 2)) # 1
 echo '1 + 1' | sed 's/.*/echo $((&))/' | bash
 echo '1 + 1' | sed 's/^/puts /' | ruby
 echo '1 + 1' | sed 's/.*/print(&)/' | python
+
+# xargsで並べる個数を制御
+seq 10 | xargs -n5
