@@ -5,3 +5,8 @@ echo '----------'
 
 # 縦に集計
 awk -F ',' '{print;a+=$2;b+=$3}END{print "total",a,b}' table.csv
+
+echo '----------'
+
+# 1列目をキーにして連想配列で合計値を出す
+awk -F ',' '{print;x[$1]+=$2;y[$1]+=$3}END{for(k in x){print k"合計",x[k],y[k]}}' table.csv
