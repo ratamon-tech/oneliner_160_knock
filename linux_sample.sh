@@ -37,3 +37,6 @@ seq 5 | xargs | sed 's/ /+/g' | sed 's/.*/echo $((&))/' | bash
 
 # 三項演算子
 seq 5 | awk '{print $1%2 ? "奇数" : "偶数"}' # awkは非ゼロは真
+
+# シェル変数出力
+echo $SHELL
