@@ -15,3 +15,7 @@ echo '1 + 1' | sed 's/.*/print(&)/' | python
 
 # xargsで並べる個数を制御
 seq 10 | xargs -n5
+
+# ランダム数(0~32767)出力
+echo $RANDOM
+echo ${RANDOM}
