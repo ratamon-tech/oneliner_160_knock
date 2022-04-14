@@ -19,3 +19,6 @@ seq 10 | xargs -n5
 # ランダム数(0~32767)出力
 echo $RANDOM
 echo ${RANDOM}
+
+# 最後に出力された数の桁数で0埋め
+seq -w 10
