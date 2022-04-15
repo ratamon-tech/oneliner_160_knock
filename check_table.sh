@@ -15,3 +15,7 @@ echo '----------'
 
 # 5列目に2,3列目を足した4列目の合計値を出す
 awk -F ',' '{print $0,$2+$3}' table.csv | ruby -ane '$F[4]=$F[3];puts $F.join(" ")'
+
+echo '----------'
+# BSD版シェルで改行を操作
+sed -e ':a' -e 'N' -e '$!ba' -e 's/\n/\t/g' table.csv
