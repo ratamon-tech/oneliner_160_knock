@@ -22,3 +22,6 @@ echo ${RANDOM}
 
 # 最後に出力された数の桁数で0埋め
 seq -w 10
+
+# for文の例
+seq 5 | awk '{for(i=1;i<$1;i++){printf " "};print "x"}' | tac
