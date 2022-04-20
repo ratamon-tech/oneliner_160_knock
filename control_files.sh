@@ -7,3 +7,6 @@
 
 # ファイルの個数
 find ./tmp/ | wc -l # カレントディレクトリの分1個多い
+
+# ファイルを引数に取るときはls -Uがよい(do not sort; list entries in directory order)
+ls -U ./tmp | xargs
