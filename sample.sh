@@ -25,3 +25,7 @@ seq -w 10
 
 # for文の例
 seq 5 | awk '{for(i=1;i<$1;i++){printf " "};print "x"}' | tac
+
+# フォーマット文字列
+printf "%*s\n" 5 x 4 x 3 x 2 x 1 x
+
