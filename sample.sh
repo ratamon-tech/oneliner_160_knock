@@ -29,3 +29,6 @@ seq 5 | awk '{for(i=1;i<$1;i++){printf " "};print "x"}' | tac
 # フォーマット文字列
 printf "%*s\n" 5 x 4 x 3 x 2 x 1 x
 
+# 今日の日付と昨日の日付
+date '+%Y/%m/%d'
+date '+%Y/%m/%d' -d 'yesterday'
