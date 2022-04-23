@@ -31,4 +31,7 @@ printf "%*s\n" 5 x 4 x 3 x 2 x 1 x
 
 # 今日の日付と昨日の日付
 date '+%Y/%m/%d'
-date '+%Y/%m/%d' -d 'yesterday'
+date '+%Y/%m/%d' -d 'yesterday' #BSD版だとだめ
+
+# BSD版用
+date "+DATE: %Y-%m-%d%nTIME: %H:%M:%S"
