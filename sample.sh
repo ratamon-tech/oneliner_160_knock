@@ -35,3 +35,7 @@ date '+%Y/%m/%d' -d 'yesterday' #BSD版だとだめ
 
 # BSD版用
 date "+DATE: %Y-%m-%d%nTIME: %H:%M:%S"
+
+# 形式
+date '+%F' # yyyy-mm-dd
+date '+%D' # mm/dd/yy
