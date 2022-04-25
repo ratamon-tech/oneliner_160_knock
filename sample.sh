@@ -39,3 +39,6 @@ date "+DATE: %Y-%m-%d%nTIME: %H:%M:%S"
 # 形式
 date '+%F' # yyyy-mm-dd
 date '+%D' # mm/dd/yy
+
+# 指定日付から曜日付きで10日分
+seq 0 10 | xargs -I@ date '+%F %a' -d '2022-04-25 @day'
