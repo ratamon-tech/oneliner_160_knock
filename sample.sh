@@ -16,6 +16,9 @@ echo '1 + 1' | sed 's/.*/print(&)/' | python
 # xargsで並べる個数を制御
 seq 10 | xargs -n5
 
+# 文字置き換え
+seq 5 10 | xargs -I @ echo 'hoge @'
+
 # ランダム数(0~32767)出力
 echo $RANDOM
 echo ${RANDOM}
@@ -24,7 +27,7 @@ echo ${RANDOM}
 seq -w 10
 
 # for文の例
-seq 5 | awk '{for(i=1;i<$1;i++){printf " "};print "x"}' | tac
+seq 5 | awk '{for(i=1;i<$1;i++){printf " "};print "x"}' | tac # tacは環境依存
 
 # フォーマット文字列
 printf "%*s\n" 5 x 4 x 3 x 2 x 1 x
