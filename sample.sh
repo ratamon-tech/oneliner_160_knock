@@ -48,3 +48,6 @@ seq 0 10 | xargs -I@ date '+%F %a' -d '2022-04-25 @day'
 
 # ファイル形式確認
 file README.md
+
+# grepで縦に並べて
+echo 'aaaaaa' | grep -o 'a'
