@@ -49,5 +49,9 @@ seq 0 10 | xargs -I@ date '+%F %a' -d '2022-04-25 @day'
 # ファイル形式確認
 file README.md
 
-# grepで縦に並べて
+# grepで縦に並べて出力
 echo 'aaaaaa' | grep -o 'a'
+
+# grepで縦に並べてそれを数える
+echo 'aaaaaa' | grep -o 'a' | grep -c 'a'
+echo 'aaaaaa' | grep -o 'a' | uniq -c
