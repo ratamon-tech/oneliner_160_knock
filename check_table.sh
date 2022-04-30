@@ -24,3 +24,9 @@ echo '----------'
 # GNU版でも同じ出力結果にはなる
 sed -e ':a' -e 'N' -e '$!ba' -e 's/\n/\t/g' table.csv # a,0.02,5        b,-0.65,3       b,10.05,-30     a,0.22,-30
 
+echo '----------++'
+
+# ファイルの中身チェック
+while read line; do
+    echo ${line}
+done < ./table.csv
