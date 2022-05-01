@@ -30,3 +30,15 @@ echo '----------++'
 while read line; do
     echo ${line}
 done < ./table.csv
+
+echo '----------++'
+
+# 判定
+while read line; do
+    first_letter=`echo ${line} | awk -F ',' '{print $1}'`
+    if [ ${first_letter} == 'a' ]; then
+        echo 'This is from a.'
+    else
+        echo 'This is not from a.'
+    fi
+done < ./table.csv
