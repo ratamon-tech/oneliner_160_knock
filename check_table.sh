@@ -41,4 +41,9 @@ while read line; do
     else
         echo 'This is not from a.'
     fi
+
+    if [[ ${first_letter} =~ ^[a] ]]; then
+        echo 'aではじまるよ'
+    fi
+
 done < ./table.csv
