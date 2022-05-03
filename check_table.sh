@@ -42,6 +42,7 @@ while read line; do
         echo 'This is not from a.'
     fi
 
+    # 正規表現で判定
     if [[ ${first_letter} =~ ^[a] ]]; then
         echo 'aではじまるよ'
     fi
