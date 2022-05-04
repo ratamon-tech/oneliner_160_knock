@@ -55,3 +55,9 @@ echo 'aaaaaa' | grep -o 'a'
 # grepで縦に並べてそれを数える
 echo 'aaaaaa' | grep -o 'a' | grep -c 'a'
 echo 'aaaaaa' | grep -o 'a' | uniq -c
+
+# 16進数
+printf "%x\n" 4126
+
+# 10進数
+echo $(( 16#101e ))
