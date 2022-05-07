@@ -66,4 +66,4 @@ echo $(( 16#101e ))
 tty
 
 # プロセス確認
-ps aux | head -3
+ps aux | head -3 # 多いので三行だけ出す
