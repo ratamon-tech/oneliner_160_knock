@@ -67,3 +67,7 @@ tty
 
 # プロセス確認
 ps aux | head -3 # 多いので三行だけ出す
+
+# カレントディレクトリ
+CURRENT=$(cd $(dirname $0);pwd)
+echo $CURRENT
