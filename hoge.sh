@@ -7,3 +7,5 @@ echo 'piyo'
 date '+%Y%m%d'
 # YYmmdd
 date '+%y%m%d'
+# YYYY-mm-dd
+date '+%Y-%m-%d'
