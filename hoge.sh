@@ -9,3 +9,5 @@ date '+%Y%m%d'
 date '+%y%m%d'
 # YYYY-mm-dd
 date '+%Y-%m-%d'
+
+echo `date`
