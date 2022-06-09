@@ -12,3 +12,4 @@ date '+%Y-%m-%d'
 
 echo `date`
 echo `date '+%Y%m%d'`
+echo `date '+%Y-%m-%d'`
