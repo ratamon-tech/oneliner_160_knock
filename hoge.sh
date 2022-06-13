@@ -14,3 +14,4 @@ echo `date '+%Y-%m-%d'`
 printf '\033[31m%s\033[m\n' 'RED'
 printf '\033[32m%s\033[m\n' 'green'
 printf '\033[33m%s\033[m\n' 'yellow'
+printf '\thoge\nfuga'
