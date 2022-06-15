@@ -19,3 +19,8 @@ echo '---'
 printf '\033[31m%s\033[m\n' 'HOGE'
 printf '\x1b[31m%s\033[m\n' 'HOGE'
 printf '\e[31m%s\033[m\n' 'HOGE'
+
+ESC=$(printf '\033')
+printf "${ESC}[31m%s${ESC}[m\n" 'fuga'
+GREEN='[32m%s'
+printf  "${ESC}${GREEN}${ESC}[m\n" 'piyo'
