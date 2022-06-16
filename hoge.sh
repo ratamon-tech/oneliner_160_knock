@@ -24,3 +24,9 @@ ESC=$(printf '\033')
 printf "${ESC}[31m%s${ESC}[m\n" 'fuga'
 GREEN='[32m%s'
 printf  "${ESC}${GREEN}${ESC}[m\n" 'piyo'
+printf  "${ESC}${GREEN}${ESC}[m" 'piyo' #　最後に改行がない
+
+echo ''
+
+BN='[m\n'
+printf  "${ESC}${GREEN}${ESC}${BN}" 'piyo'
