@@ -35,3 +35,5 @@ echo ''
 
 BN='[m\n'
 printf  "${ESC}${GREEN}${ESC}${BN}" 'piyo'
+
+echo $SHELL
