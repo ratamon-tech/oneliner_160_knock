@@ -39,3 +39,5 @@ printf  "${ESC}${GREEN}${ESC}${BN}" 'piyo'
 echo $SHELL
 
 sudo -V
+
+echo {a,b,c}
