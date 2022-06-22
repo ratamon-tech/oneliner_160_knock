@@ -41,3 +41,6 @@ echo $SHELL
 sudo -V
 
 echo {a,b,c}
+
+# zsh
+date -v -1d
