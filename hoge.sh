@@ -45,3 +45,4 @@ echo {a,b,c}
 # zsh
 date -v -1d
 date -v +1d
+date -v +1y -v -1m
