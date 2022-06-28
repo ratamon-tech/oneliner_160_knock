@@ -1,4 +1,5 @@
 # 実行は[. sample.sh]
+# zshだと↑は効かないのでsh sample.sh
 
 # 使ってるシェルの確認
 echo $0
@@ -43,8 +44,8 @@ date "+DATE: %Y-%m-%d%nTIME: %H:%M:%S"
 date '+%F' # yyyy-mm-dd
 date '+%D' # mm/dd/yy
 
-# 指定日付から曜日付きで10日分
-seq 0 10 | xargs -I@ date '+%F %a' -d '2022-04-25 @day'
+# 指定日付から曜日付きで10日分(bash)
+# seq 0 10 | xargs -I@ date '+%F %a' -d '2022-04-25 @day'
 
 # ファイル形式確認
 file README.md
