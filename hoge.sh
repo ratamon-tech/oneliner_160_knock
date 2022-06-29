@@ -48,3 +48,5 @@ date -v +1d
 date -v +1y -v -1m
 date '+%Y%m%d%H%M%s'
 date '+%Y%m%d%H%M%S'
+
+`echo $SHELL` --version
