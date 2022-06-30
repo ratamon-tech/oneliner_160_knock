@@ -50,3 +50,4 @@ date '+%Y%m%d%H%M%s'
 date '+%Y%m%d%H%M%S'
 
 `echo $SHELL` --version
+zsh --version
