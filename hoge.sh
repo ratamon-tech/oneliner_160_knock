@@ -53,3 +53,5 @@ date '+%Y%m%d%H%M%S'
 zsh --version
 
 echo 'if文書きたい'
+
+test 1 -eq 1; echo $?
